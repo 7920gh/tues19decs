@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   resources :tues19decs
 
 
+
+
+
+#root "application#hello"
 root 'tues19decs#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
