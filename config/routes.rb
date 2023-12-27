@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'say/hello'
+  get 'say/goodbye'
   resources :tues19decs
 
 
