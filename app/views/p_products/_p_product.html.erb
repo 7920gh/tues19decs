@@ -12,7 +12,7 @@
   <p class="my-5">
     <strong class="block font-medium mb-1">Image url:</strong>
     <%= p_product.image_url %>
-	<%= image_tag(p_product.image_url, class: 'w-40') %>
+	#<%= image_tag(p_product.image_url, class: 'w-40') %>
   </p>
 
   <p class="my-5">
@@ -26,3 +26,36 @@
     <hr class="mt-6">
   <% end %>
 </div>
+
+
+<div>
+<table id="p_products" class="mx-auto">
+<tbody>
+<% @p_products.each do |product| %>
+
+<%= image_tag(p_product.image_url, class: 'w-40') %>
+
+ 
+
+
+<% end %>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
