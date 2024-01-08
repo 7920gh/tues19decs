@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :p_products
   resources :products
   get 'say/hello'
   get 'say/goodbye'
