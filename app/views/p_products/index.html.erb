@@ -23,7 +23,7 @@
 <% @p_products.each do |product| %>
 
 <%= image_tag('DSC7810.jpg', size: '100x100') %>
-<%= image_tag('image_url', size: '100x100') %>
+<%= image_tag(product.image_url, size: '100x100') %>
 
 <% end %>
 
