@@ -29,7 +29,8 @@
 <%= product.title %> 
 <%= product.image_url %>
 <%= image_tag 'big_tent-01.jpg' %>
-<%= image_tag product.image_url %>
+
+<%= image_tag @p_products.image_url %>
 
 <% end %>
 
