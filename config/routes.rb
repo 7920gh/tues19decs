@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'say/goodbye'
   resources :tues19decs
 
-
+get '/ads/:id', :controller=>'ads', :action=>'show'
 
 
 
