@@ -1,0 +1,14 @@
+class AdsController < ApplicationController
+
+
+
+
+
+
+
+
+
+
+
+
+end
