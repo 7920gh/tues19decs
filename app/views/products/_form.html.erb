@@ -12,30 +12,30 @@
     </div>
   <% end %>
   
-  <pre>
-  <h1>hello this is  mark..</h1>
+  
+  <h1>hello this is  mark..</h1><br>
 
   <div class="my-5">
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title , class: "block shadow rounded-md-3"%>
-  </div>
+  </div><br>
 
   <div class="my-5">
     <%= form.label :description, style: "display: block" %>
     <%= form.text_area :description, rows:10, class: "block shadow rounded-md-3" %>
-  </div>
+  </div><br>
 
   <div class="my-5">
     <%= form.label :image_url, style: "display: block" %>
     <%= form.text_field :image_url , class: "block shadow rounded-md-3" %>
-  </div>
+  </div><br>
 
   <div class="my-5">
     <%= form.label :price, style: "display: block" %>
     <%= form.text_field :price , class: "block shadow rounded-md-3"%>
-  </div>
+  </div><br>
 
   <div class="inline">
     <%= form.submit "loggg in", class:"bg-gray-100 px-4 py-2 rounded hover:bg-gray-200" %>
-  </div></pre>
+  </div>
 <% end %>
