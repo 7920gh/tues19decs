@@ -9,7 +9,10 @@ end
 
 
 
-
+ # Only allow a list of trusted parameters through.
+    def ad_params
+      params.require(:ticket).permit(:name, :description, :price, :seller_id, :email, :img_url)
+    end
 
 
 
