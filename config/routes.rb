@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 get '/ads/:id', :controller=>'ads', :action=>'show'
 get '/ads/',:controller=>'ads',:action=>'show'
 get 'ads/show'
+get '/adds/', :controller=>'adds', :action=>'show'
+get '/adds/:id', :controller=>'adds', :action=>'show'
 
 
 #root "application#hello"
