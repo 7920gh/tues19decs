@@ -13,7 +13,7 @@
   <% end %>
   <h1>hello this is  mark..</h1>
 
-  <div>
+  <div class="my-5">
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title %>
   </div>
@@ -23,17 +23,17 @@
     <%= form.text_area :description, rows:10, class: "block shadow rounded-md-3" %>
   </div>
 
-  <div>
+  <div class="my-5">
     <%= form.label :image_url, style: "display: block" %>
     <%= form.text_field :image_url %>
   </div>
 
-  <div>
+  <div class="my-5">
     <%= form.label :price, style: "display: block" %>
     <%= form.text_field :price %>
   </div>
 
-  <div>
+  <div class="my-5">
     <%= form.submit "loggg in", class:"bg-gray-100 px-4 py-2 rounded hover:bg-gray-200" %>
   </div>
 <% end %>
