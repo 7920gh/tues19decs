@@ -11,11 +11,13 @@
       </ul>
     </div>
   <% end %>
+  
+  <pre>
   <h1>hello this is  mark..</h1>
 
   <div class="my-5">
     <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title , class: "block shadow rounded-md-3"%>
   </div>
 
   <div class="my-5">
@@ -25,15 +27,15 @@
 
   <div class="my-5">
     <%= form.label :image_url, style: "display: block" %>
-    <%= form.text_field :image_url %>
+    <%= form.text_field :image_url , class: "block shadow rounded-md-3" %>
   </div>
 
   <div class="my-5">
     <%= form.label :price, style: "display: block" %>
-    <%= form.text_field :price %>
+    <%= form.text_field :price , class: "block shadow rounded-md-3"%>
   </div>
 
-  <div class="my-5">
+  <div class="inline">
     <%= form.submit "loggg in", class:"bg-gray-100 px-4 py-2 rounded hover:bg-gray-200" %>
-  </div>
+  </div></pre>
 <% end %>
