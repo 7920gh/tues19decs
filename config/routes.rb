@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
 get '/ads/:id', :controller=>'ads', :action=>'show'
 get '/ads/',:controller=>'ads',:action=>'show'
-
+get 'ads/show'
 
 
 #root "application#hello"
