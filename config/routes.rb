@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :tues19decs
 
 get '/ads/:id', :controller=>'ads', :action=>'show'
+get '/ads/',:controller=>'ads',:action=>'show'
 
 
 
