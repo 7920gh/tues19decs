@@ -16,7 +16,7 @@ get 'ads', :controller=>'ads', :action=>'show'
 #get '/ads/:id', :controller=>'ads', :action=>'show'
 #get '/adds/:id', :controller=>'adds', :action=>'show'
 #get "adds", as: "something#viral" => "adds"
-
+get '/', to: proc { [200, {}, ['']] }
 
 #root "application#hello"
 root 'tues19decs#index'
