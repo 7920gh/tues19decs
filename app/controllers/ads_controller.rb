@@ -4,7 +4,7 @@ before_action :set_ad, only: %i[ show edit update destroy ]
 
 def show
  
- @ad = Ad.find(params[:id])
+ #@ad = Ad.find(params[:id])
 end
 
 
