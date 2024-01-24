@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :events
   resources :tickets
   resources :p_products
-  resources :products
+  #resources :products
   get 'say/hello'
   get 'say/goodbye'
   resources :tues19decs
