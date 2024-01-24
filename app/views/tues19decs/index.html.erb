@@ -1,9 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
+
+<table><tr><td>
 <h1>Tues19decs</h1>
-<p>
-<%= link_to "Hello link to goodbye this is inside the index.page..", say_goodbye_path %>
-</p>
+
 
 <div id="tues19decs">
   <% @tues19decs.each do |tues19dec| %>
@@ -15,3 +15,16 @@
 </div>
 
 <%= link_to "New tues19dec", new_tues19dec_path %>
+
+</tr></td>
+<tr><td>
+<h1>links to other pages</h1>
+<%= link_to "my adds page", adds %>
+
+
+<p>
+<%= link_to "Hello link to goodbye this is inside the index.page..", say_goodbye_path %>
+</p>
+</td></tr>
+
+</table>
