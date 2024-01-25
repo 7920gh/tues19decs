@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'store/index'
    get 'store'
+   root 'store#index', as: 'store_index'
   resources :events
   resources :tickets
   resources :p_products
