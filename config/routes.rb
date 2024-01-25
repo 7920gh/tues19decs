@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'store/index'
   resources :events
   resources :tickets
   resources :p_products
