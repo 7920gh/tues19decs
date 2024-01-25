@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'say/goodbye'
   resources :tues19decs
   #resources :ads
+  
+  
 
 #get '/ads/:id', :controller=>'ads', :action=>'show'
 #get '/ads/',:controller=>'ads',:action=>'show'

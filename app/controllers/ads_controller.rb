@@ -4,7 +4,8 @@ class AdsController < ApplicationController
 
 def show
  
-# @ad = Ad.find(params[:id])
+ @ads = Ad.find(params[:id])
+  #@products=Product.order(:title)
 end
 
 
