@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   
  # get '/ads/:id/edit', :controller=>'ads', :action=>'edit'  
 # get '/ads/:id', :controller=>'ads', :action=>'show'  
-get 'ads', :controller=>'ads', :action=>'show'
+#get 'ads', :controller=>'ads', :action=>'show'
  
 
 #get '/ads/:id', :controller=>'ads', :action=>'show'
