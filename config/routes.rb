@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get 'say/hello'
   get 'say/goodbye'
   resources :tues19decs
-  resources :ads
+ # resources :ads
   
  # get '/ads/:id/edit', :controller=>'ads', :action=>'edit'  
 # get '/ads/:id', :controller=>'ads', :action=>'show'  
