@@ -11,15 +11,18 @@ Rails.application.routes.draw do
   resources :tues19decs
   #resources :ads
   
-  
+  get '/ads/:id/edit', :controller=>'ads', :action=>'edit'  
+ get '/ads/:id', :controller=>'ads', :action=>'show'  
+get 'ads', :controller=>'ads', :action=>'show'
+ 
 
 #get '/ads/:id', :controller=>'ads', :action=>'show'
 #get '/ads/',:controller=>'ads',:action=>'show'
 #get 'ads/show'
 #get 'adds', :controller=>'adds', :action=>'show'
-get 'ads', :controller=>'ads', :action=>'show'
-get '/ads/:id', :controller=>'ads', :action=>'show'
 #get '/adds/:id', :controller=>'adds', :action=>'show'
+
+
 #get "adds", as: "something#viral" => "adds"
 get '/', to: proc { [200, {}, ['']] }
 
