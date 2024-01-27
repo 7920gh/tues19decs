@@ -3,7 +3,7 @@ class AdsController < ApplicationController
 
 
 def show
- @ads = Ad.find(ad_params)
+ @ad = Ad.find(ad_params)
 # @ad = Ad.find(params[:id])
   #@products=Product.order(:title)
   #@product = Product.new(product_params)
