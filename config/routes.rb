@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   resources :tues19decs
  # resources :ads
  
+ 
+ get 'ads/:id', to: 'ads#show'
  get 'ads' , to: 'ads#show' 
   
  # get '/ads/:id/edit', :controller=>'ads', :action=>'edit'  
