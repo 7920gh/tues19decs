@@ -8,7 +8,7 @@ def show
   #@products=Product.order(:title)
   #@product = Product.new(product_params)
   #@products=Product.order(:title)
-  render plain: 'hello mark'
+ # render plain: 'hello mark'
   render plain: "#{params}\n\nid: #{params[:id]}"
 end
 
