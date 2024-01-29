@@ -4,7 +4,9 @@
 <body>
 <div>
 <p>
-<b>Name:<%= @ad.name %><%= 1+1 %><%= @ad.description %></b>
+<% @ad.each do |addd|
+<b>Name:<%= addd.name %><%= 1+1 %><%= addd.description %></b>
+<% end %>
 </p>
 </div>
 
