@@ -9,7 +9,8 @@ def show
   #@product = Product.new(product_params)
   #@products=Product.order(:title)
  # render plain: 'hello mark'
- @products=Product.order(:title)
+# @products=Product.order(:title)
+ @ad=Ad
 end
 
 def edit
