@@ -3,7 +3,7 @@ class AddsController < ApplicationController
 
 def show
  
- @add = Add.find(:id)
+ add = Add.find_by(email: params[:id][:name])
 end
 
 
