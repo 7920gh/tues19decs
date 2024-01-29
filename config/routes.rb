@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get 'say/goodbye'
   resources :tues19decs
  # resources :ads
- 
+ resources :adds
  
  get 'ads/:id', to: 'ads#show'
  get 'ads' , to: 'ads#index' 
@@ -23,8 +23,8 @@ Rails.application.routes.draw do
 #get '/ads/:id', :controller=>'ads', :action=>'show'
 #get '/ads/',:controller=>'ads',:action=>'show'
 #get 'ads/show'
-get 'adds', :controller=>'adds', :action=>'show'
-get 'adds/:id', :controller=>'adds', :action=>'show'
+#get 'adds', :controller=>'adds', :action=>'show'
+#get 'adds/:id', :controller=>'adds', :action=>'show'
 
 
 #get "adds", as: "something#viral" => "adds"
