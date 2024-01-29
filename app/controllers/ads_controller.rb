@@ -9,9 +9,7 @@ def show
   #@product = Product.new(product_params)
   #@products=Product.order(:title)
  # render plain: 'hello mark'
- <% @ad.each do |ad| %>
- render plain: "#{params}\n\nid: #{params[:id]}"
- <% end %>
+ 
 end
 
 def edit
