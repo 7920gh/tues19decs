@@ -10,7 +10,7 @@ def show
   #@products=Product.order(:title)
  # render plain: 'hello mark'
 # @products=Product.order(:title)
- @ad=Ad
+ @ad=Ad.all
 end
 
 def edit
