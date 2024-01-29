@@ -20,7 +20,7 @@
 #ads.destroy_all
 
 50.times do |index|
-Ad.create!([{
+Add.create!([{
 name: "frank #{index}",
 description: "nice bike #{index}",
 price: "#{index}"+"5",
