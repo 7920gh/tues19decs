@@ -22,7 +22,7 @@ end
 
     # Only allow a list of trusted parameters through.
     def add_params
-      params.require(:add).permit(:id :email, :description, :name, :price)
+      params.require(:add).permit(:id, :email, :description, :name, :price)
     end
 
 
