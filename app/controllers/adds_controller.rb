@@ -1,7 +1,10 @@
 class AddsController < ApplicationController
 #before_action :set_product, only: %i[ show ]
 
+def show
 
+
+@adds = Add.all
  <% @adds.each do |add| %>
     
     <p>
@@ -12,7 +15,10 @@ class AddsController < ApplicationController
   <% end %>
 
 
-def show
+
+
+
+
  
 # @adds = Add.find_by(id: params[:id])
 end
