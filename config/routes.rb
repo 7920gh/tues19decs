@@ -10,7 +10,12 @@ Rails.application.routes.draw do
   get 'say/goodbye'
   resources :tues19decs
  # resources :ads
- resources :adds
+# resources :adds
+ 
+ get 'adds/', to: 'adds#index', as: 'adds'
+ get 'adds/:id', to: 'adds#show', as: 'show'
+ 
+ 
  
  get 'ads/:id', to: 'ads#show'
  get 'ads' , to: 'ads#index' 
