@@ -14,15 +14,13 @@ def index
 #@add = Add.last
 #@add = Add.find_by(id: params[:id])
 #@products = Product.all
-end
-
-
-
-
- 
-
 
 
 
 
 end
+
+
+
+end
+
