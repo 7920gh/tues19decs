@@ -3,7 +3,7 @@ before_action :set_product, only: %i[ show ]
 
 def show
  
- @add = Add.find_by(id: params[:id])
+ @adds = Add.find_by(id: params[:id])
 end
 def index
 @adds = Add.all
