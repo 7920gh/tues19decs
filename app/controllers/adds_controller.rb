@@ -3,7 +3,7 @@ before_action :set_product, only: %i[ show ]
 
 def show
  
- @adds = Add.find_by(id: params[:id])
+# @adds = Add.find_by(id: params[:id])
 end
 def index
 @adds = Add.all
@@ -22,7 +22,7 @@ end
 
     # Only allow a list of trusted parameters through.
     def add_params
-      params.require(:add).permit(:email, :description, :name, :price)
+      params.require(:add).permit(:id :email, :description, :name, :price)
     end
 
 
