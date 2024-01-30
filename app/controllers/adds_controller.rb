@@ -6,8 +6,9 @@ def show
  @add = Add.find_by(id: params[:id])
 end
 def index
-
-@add = Add.find_by(id: params[:id])
+@adds = Add.all
+#@add = Add.find_by(id: params[:id])
+#@products = Product.all
 end
 
 
