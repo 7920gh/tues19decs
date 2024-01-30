@@ -18,8 +18,8 @@
 
 <% @add.each do |ad| %>
   
-  <h1><p><%= ad.name %></p></h1>
-  \n\n
+  <%= ad.name %>
+  
   <h1>So I'm writing this to see if it appears <%= 2*2 %> = 444!\n\n</h1>
 	
 <% end %>
@@ -28,7 +28,7 @@
 
 
 
-<h1><%= 6*6 %></h1>
+<h1><%= 6*6 @add %></h1>
 
 
 
