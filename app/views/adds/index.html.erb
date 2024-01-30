@@ -17,9 +17,14 @@
 <ul>
 
 
- <li><%= add.id %></li>
 
 
+ <% @adds.each do |product| %>
+    <%= render product %>
+    <p>
+      <%= link_to "Show this product", product %>
+    </p>
+  <% end %>
 
 
 
