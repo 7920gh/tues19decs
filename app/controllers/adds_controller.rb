@@ -1,6 +1,17 @@
 class AddsController < ApplicationController
 #before_action :set_product, only: %i[ show ]
 
+
+ <% @adds.each do |add| %>
+    
+    <p>
+      <%= add.name %>
+    </p>
+	
+	
+  <% end %>
+
+
 def show
  
 # @adds = Add.find_by(id: params[:id])
