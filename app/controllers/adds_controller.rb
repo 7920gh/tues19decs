@@ -3,25 +3,13 @@ class AddsController < ApplicationController
 
 def show
 
+#@adds = Add.find(id:)<% @adds.each do |add| %><p><%= add.name %></p><% end %>
 
-@adds = Add.all
- <% @adds.each do |add| %>
-    
-    <p>
-      <%= add.name %>
-    </p>
-	
-	
-  <% end %>
-
-
-
-
-
-
- 
 # @adds = Add.find_by(id: params[:id])
 end
+
+
+
 def index
 @adds = Add.all
 #@add = Add.find_by(id: params[:id])
