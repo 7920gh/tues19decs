@@ -19,7 +19,7 @@ end
 
 def index
 
-@ad=Ad.find(params[:id])
+@ads=Ad.all
 
 end
 
