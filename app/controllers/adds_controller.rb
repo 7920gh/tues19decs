@@ -33,7 +33,7 @@ def create
 
 @add.save
 
-
+redirect_to "/adds/#{@add.id}"
 end
 
 
