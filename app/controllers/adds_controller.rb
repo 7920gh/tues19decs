@@ -5,7 +5,7 @@ class AddsController < ApplicationController
 def show
 
 #@adds = Add.find(id:)<% @adds.each do |add| %><p><%= add.name %></p><% end %>
-#@add=Add.find(params[:id])
+@add=Add.find(params[:id])
 # products = Add.find_by(id: params[:id])
 @products = Product.all
 end
