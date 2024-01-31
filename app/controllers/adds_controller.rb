@@ -27,7 +27,14 @@ def new
 
 end
 
+def create
 
+@add=Add.new(params{:id})
+
+@add.save
+
+
+end
 
 
 
