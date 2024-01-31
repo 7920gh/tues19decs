@@ -12,16 +12,13 @@
  
  
  
- Add.create!(name:  "Lone User",
-             email: "test@fakertutorial.org")
+ Product.create!(title:  "Lone User")
 
 99.times do |n|
-  name  = Faker::Name.name
-  email = Faker::Internet.email
-  Add.create!(name:  name,
-               email: email)
+  title  = Faker::Name.name
+  img_url = Faker::Name.name
 # and another sort of syntax for adding posts for our users
-  Add.create({description: Faker::Hipster.sentence, img_url: Faker::Lorem.sentence})
+  Product.create({description: Faker::Hipster.sentence, image_url: Faker::Lorem.sentence})
 end
  
  
