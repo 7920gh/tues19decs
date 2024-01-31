@@ -12,7 +12,7 @@ Rails.application.routes.draw do
  # resources :ads
 # resources :adds
  
- get 'adds/', to: 'adds#index', as: 'adds'
+ get 'adds/', to: 'adds#index', as: 'index'
  get 'adds/:id', to: 'adds#show', as: 'show'
  
  
