@@ -14,7 +14,7 @@ Rails.application.routes.draw do
  
  get 'adds/new', to: 'adds#show', as: 'new'
  get 'adds/', to: 'adds#index', as: 'index'
- get 'adds/:id', to: 'adds#show', as: 'new'
+ get 'adds/:id', to: 'adds#show', as: 'show'
   
  
  
