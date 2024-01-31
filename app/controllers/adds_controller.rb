@@ -23,7 +23,7 @@ def index
 
 end
 def new
- @adds = Add.new
+ @add = Add.new
 
 end
 
