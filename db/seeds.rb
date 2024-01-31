@@ -10,15 +10,22 @@
  #require 'Faker'
  require 'faker'
  
+ Product.destroy_all
  
  
- Product.create!(title:  "Lone User")
+ 
+ 
+ 
+ #title: Faker::Hipster.sentence
+ 
+ 
+ #Product.create!(title:  "Lone User")
 
 99.times do |n|
-  title  = Faker::Name.name
-  img_url = Faker::Name.name
+ # title  = Faker::Name.name
+ # image_url = Faker::Name.name
 # and another sort of syntax for adding posts for our users
-  Product.create({description: Faker::Hipster.sentence, image_url: Faker::Lorem.sentence})
+  Product.create({title: Faker::Hipster.sentence, description: Faker::Hipster.sentence, image_url: Faker::Lorem.sentence})
 end
  
  
