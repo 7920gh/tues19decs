@@ -1,4 +1,4 @@
-<%= form_with(model: add, class: "contents") do |form| %>
+<%= form_with(model: @add, class: "contents") do |form| %>
   <% if add.errors.any? %>
     <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
       <h2><%= pluralize(add.errors.count, "error") %> prohibited this p_product/add from being saved:</h2>
