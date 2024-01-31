@@ -5,8 +5,8 @@ def show
 
 #@adds = Add.find(id:)<% @adds.each do |add| %><p><%= add.name %></p><% end %>
 
- products = Add.find_by(id: params[:id])
-#@products = Product.all
+# products = Add.find_by(id: params[:id])
+@products = Product.all
 end
 
 
