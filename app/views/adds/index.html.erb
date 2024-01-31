@@ -32,7 +32,7 @@
  <% @products.each do |pproduct| %>
     <%= render pproduct %>
     <p>
-      <%= link_to "Show this product", pproduct %>
+      <%= link_to "Show this product", product %>
     </p>
   <% end %>
   
@@ -45,6 +45,7 @@
     <p>
       <%= link_to "Show this product", ddd %>
     </p>
+	  <%= render ddd.description %>
   <% end %>
 
 
