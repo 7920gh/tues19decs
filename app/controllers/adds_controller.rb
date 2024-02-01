@@ -17,9 +17,9 @@ def index
 #@add = Add.find_by(id: params[:id])
 #@products = Product.all
 #@products=Product.order(:title)
-@adds=Add.order(:name)
+#@adds=Add.order(:name)
 @products = Product.all
-@adds=Add.find(:all)
+#@adds=Add.find(:all)
 
 end
 def new
