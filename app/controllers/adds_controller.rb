@@ -19,7 +19,7 @@ def index
 #@products=Product.order(:title)
 #@adds=Add.order(:name)
 @products = Product.all
-#@adds=Add.find(:all)
+@adds=Add.find(:all)
 
 end
 def new
