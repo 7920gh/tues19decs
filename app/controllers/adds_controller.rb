@@ -5,7 +5,7 @@ class AddsController < ApplicationController
 def show
 
 #@adds = Add.find(id:)<% @adds.each do |add| %><p><%= add.name %></p><% end %>
-@adds=Add.find(params[:id])
+@add=Add.find(params[:id])
 # products = Add.find_by(id: params[:id])
 @products = Product.all
 end
@@ -19,7 +19,7 @@ def index
 #@products=Product.order(:title)
 @adds=Add.order(:name)
 @products = Product.all
-#@adds=Add.find(:all)
+@adds=Add.find(:all)
 
 end
 def new
