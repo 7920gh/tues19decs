@@ -23,17 +23,17 @@ def index
 
 end
 def new
- @add = Add.new
+ #@add = Add.new
 
 end
 
 def create
 
-@add=Add.new(params{:id})
+#@add=Add.new(params{:id})
 
-@add.save
+#@add.save
 
-redirect_to "/adds/#{@add.id}"
+#redirect_to "/adds/#{@add.id}"
 end
 
 
