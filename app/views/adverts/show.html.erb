@@ -9,9 +9,9 @@
 <%=  @advert.description %><br />
 <%=  @advert.price %><br />
 <img src="<%= @advert.image_url %>"></img><br />
-<%= link_to "Would you like to edit this entry?", edit_path %><br />
-<%= link_to "Would you like to delete this entry?", delete_path %><br />
-<%= link_to "back to index of all entries", list_path %><br />
+<%= link_to "Would you like to edit this entry?", edit_path, class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %><br />
+<%= link_to "Would you like to delete this entry?", delete_path, class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %><br />
+<%= link_to "back to index of all entries", list_path, class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %><br />
 
 
 

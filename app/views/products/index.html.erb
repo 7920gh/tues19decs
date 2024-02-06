@@ -13,13 +13,13 @@
   <% @products.each do |product| %>
     <%= render product %>
     <p>
-      <%= link_to "Show this product", product %>
+      <%= link_to "Show this product", product, class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New product", new_product_path %>
+<%= link_to "New product", new_product_path, class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %>
 
 
-<%= link_to "User Original", new_product_path %>
+<%= link_to "User Original", new_product_path, class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %>
 
