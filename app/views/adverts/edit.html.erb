@@ -1,0 +1,29 @@
+<h1>This is the edit page..? Infact editing </h1>
+
+
+
+<div class="my-5">
+
+
+<%= form_for :advert do |f| %>
+
+<%= f.label:name %><br />
+<%= f.text_field :name %><br />
+<%= f.label :product %><br />
+<%= f.text_field :product %><br />
+<%= f.label :description %><br />
+<%= f.text_field :description %><br />
+<%= f.label :price %>
+<%= f.text_field :price %><br />
+<%= f.label :image_url %>
+<%= f.text_field :image_url %><br>
+
+
+
+
+<%= f.submit class: "rounded-lg py-3 px-5"%>
+<% end %>
+<%= link_to "back to index", list_path %>
+
+</div>
+

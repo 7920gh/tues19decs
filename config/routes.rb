@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
  # get 'store/index'
  #  get 'store'
+ #root "adverts#new", as: 'new'
    root 'store#index', as: 'store_index'
   resources :events
   resources :tickets
@@ -11,6 +12,25 @@ Rails.application.routes.draw do
   resources :tues19decs
  # resources :ads
  resources :adds
+ 
+ #patch 'adverts/:id', to: 'adverts#update'
+ post 'adverts/:id/edit', to: 'adverts#update', as: 'update'
+ get 'adverts/:id/edit', to: 'adverts#edit', as: 'edit'
+ get 'adverts/:id/delete', to: 'adverts#delete', as: 'delete'
+ #get 'adverts/show', to: 'adverts#show', as: 'show' 
+  get 'adverts/new', to: 'adverts#new_advert', as: 'new'
+ get 'adverts/:id', to: 'adverts#show', as: 'show', id: /\d+/
+
+
+
+ post 'adverts', to: 'adverts#create'
+ get 'adverts/', to: 'adverts#index', as: 'list'
+ 
+ #get 'adverts/new', to: 'adverts#new_advert', as: 'new'
+ #get 'adverts/show', to: 'adverts#show', as: 'show'
+ 
+ # get 'adverts', to: 'adverts#index', as: 'index'
+ 
  
  #get 'adds/create', to: 'adds#create', as: 'show'
  #get 'adds/new', to: 'adds#new', as: 'new'

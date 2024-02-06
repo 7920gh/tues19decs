@@ -1,0 +1,27 @@
+
+<div class="my-5">
+<h1>Add advert</h1><br />
+<p><h2>form..NEW_ADVERT..</h2></p><br />
+<p><h3>new_advert..</h3></p><br />
+
+\n\n
+
+
+<h2>New Advert</h2>
+</div>
+
+
+
+
+<%= form_for @advert do |f| %>
+<div class="my-5">
+<p><b>Name</b><br /><%= f.text_field :name %></p>
+<p><b>Product</b><br /><%= f.text_field :product %></p>
+<p><b>Description</b><br /><%= f.text_field :description %></p>
+<p><b>Price</b><br /><%= f.text_field :price %></p>
+<p><b>Email</b><br /><%= f.text_field :email %></p>
+<p><b>Image_url</b><br /><%= f.text_field :image_url %></p>
+<p><%= f.submit "Create" %></p>
+
+</div>
+<% end %>

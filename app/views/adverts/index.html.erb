@@ -1,0 +1,30 @@
+<div class="my-5"><h1> Placing adverts for products for sale...</h1>
+
+<h1>index adverts</h1>
+
+<h2><%= link_to "create new advert", new_path %></h2>
+
+
+Click underlined entry below to edit or delete.
+<br /><br />
+
+
+
+<% @adverts.each do |ad| %>
+<%= link_to ad.name, show_path(ad) %>
+
+<%=  link_to ad.description, show_path(ad) %>
+<%=  link_to ad.product, show_path(ad) %>
+<%=  link_to ad.image_url, show_path(ad) %>
+<%=  ad.price %>
+
+<br />
+
+<% end %>
+
+
+
+</div>
+<br>
+
+
