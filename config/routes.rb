@@ -2,7 +2,7 @@ Rails.application.routes.draw do
  # get 'store/index'
  #  get 'store'
  #root "adverts#new", as: 'new'
-   root 'store#index', as: 'store_index'
+   root 'adverts#index', as: 'index'
   resources :events
   resources :tickets
   resources :p_products
