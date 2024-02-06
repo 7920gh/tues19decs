@@ -11,14 +11,14 @@ Click underlined entry below to edit or delete.
 
 
 <% @adverts.each do |ad| %>
-<%= link_to ad.name, show_path(ad) %>
+<%= link_to ad.name, show_path(ad) %><br />
 
-<%=  link_to ad.description, show_path(ad) %>
-<%=  link_to ad.product, show_path(ad) %>
-<%=  link_to ad.image_url, show_path(ad) %>
-<%=  ad.price %>
+<%=  link_to ad.description, show_path(ad) %><br />
+<%=  link_to ad.product, show_path(ad) %><br />
+<%=  link_to ad.image_url, show_path(ad) %><br />
+<%=  link_to ad.price, show_path(ad) %> <br />
 
-<br />
+<br /><br />
 
 <% end %>
 
