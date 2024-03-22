@@ -4,10 +4,14 @@ class ProductsController < ApplicationController
   # GET /products or /products.json
   def index
     @products = Product.all
+	@q = Advert.ransack(params[:q])
+@adverts = @q.result(distinct: true).order(email: :desc)
+
   end
 
   # GET /products/1 or /products/1.json
   def show
+  #@product = Product.find(params[:id])
   end
 
   # GET /products/new
@@ -17,6 +21,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+  #@product = Product.find(params[:id])
   end
 
   # POST /products or /products.json
@@ -25,7 +30,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       if @product.save
-        format.html { redirect_to product_url(@product), notice: "Product was successfully created." }
+        format.html { redirect_to product_url(@product), notice: "created." }
         format.json { render :show, status: :created, location: @product }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +43,7 @@ class ProductsController < ApplicationController
   def update
     respond_to do |format|
       if @product.update(product_params)
-        format.html { redirect_to product_url(@product), notice: "Product was successfully updated." }
+        format.html { redirect_to product_url(@product), notice: "updated." }
         format.json { render :show, status: :ok, location: @product }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +57,7 @@ class ProductsController < ApplicationController
     @product.destroy!
 
     respond_to do |format|
-      format.html { redirect_to products_url, notice: "Product was successfully destroyed." }
+      format.html { redirect_to products_url, notice: "destroyed." }
       format.json { head :no_content }
     end
   end

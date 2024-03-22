@@ -1,29 +1,36 @@
-<div class="my-5"><h1> Placing adverts for products for sale...</h1>
+<%= render :partial => 'header' %>
+<% if notice.present? %>
+< p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id= "notice"
+<%= notice %>
+<% end %>
 
-<h1>index adverts</h1>
-
+<%= search_form_for @q do |f| %>
+<%= f.label :name_cont,'Search any for any word to find your add!' %><br />
+<!--<%= f.check_box :email, {}, 1,nil %>
+<%= f.label :email, 'Includes email?', class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %><br />-->
+<%= f.search_field :name_or_product_or_description_or_email_i_cont %>
+<%= f.submit name:'' %>
+<% end %>
+ 
 <h2><%= link_to "create new advert", new_path, class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %></h2>
-
 
 Click underlined entry below to edit or delete.
 <br /><br />
 
-
-
 <% @adverts.each do |ad| %>
-<%= link_to ad.name, show_path(ad) %><br />
-
-<%=  link_to ad.description, show_path(ad) %><br />
-<%=  link_to ad.product, show_path(ad) %><br />
-<%=  link_to ad.price, show_path(ad) %> <br />
+name: <%= link_to ad.name, show_path(ad) %><br />
+description: <%=  link_to ad.description, show_path(ad) %><br />
+product: <%=  link_to ad.product, show_path(ad) %><br />
+price: <%=   number_to_currency(      link_to ad.price, show_path(ad)    )    %> <br />
+email: <%= ad.email %><br />
+<%= ad.image_url %>
 <img src="<%= ad.image_url %>"></img><br />
-
+ <%= button_to 'Add to Cart', line_items_path(ad_id: ad), form_class: 'inline', class: 'ml-4 rounded-lg py-1 px-2 text-white bg-green-600' %>
 
 <br /><br />
 
 <% end %>
 <%= link_to "back to the top", list_path, class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %><br />
-
 
 </div>
 <br>

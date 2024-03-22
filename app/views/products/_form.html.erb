@@ -1,4 +1,5 @@
 <%= form_with(model: product, class: "contents") do |form| %>
+  
   <% if product.errors.any? %>
     <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
     <div style="color: red">
@@ -12,9 +13,11 @@
     </div>
   <% end %>
   
+  
+  
   <div id="<%= dom_id product %>">
  
-  <h1>hello this is  mark..</h1>
+  <h1>hello this is  mark..in _form for products</h1>
 
 
   <div class="my-5">
@@ -22,12 +25,9 @@
     <%= form.text_field :title , class: "block shadow rounded-md-3"%>
   </div>
 
-
-
-
   <div class="my-5">
     <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description, rows:10, class: "block shadow rounded-md-3" %>
+    <%= form.text_area :description, rows:8, class: "block shadow rounded-md-3" %>
   </div><br>
 
   <div class="my-5">
@@ -41,7 +41,7 @@
   </div><br>
 
   <div class="inline">
-    <%= form.submit "loggg in", class:"bg-gray-100 px-4 py-2 rounded hover:bg-gray-200" %>
+    <%= form.submit "Submit new product", class:"rounded-lg py-3 px-4 text-black     bg-green-600 px-4 py-2 rounded hover:bg-green-600 font-medium cursor-pointer " %>
   </div>
  </div> 
   

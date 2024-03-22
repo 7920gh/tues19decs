@@ -1,25 +1,37 @@
-
-
-
-
-
-
-
 <p style="color: green"><%= notice %></p>
-
-<h1>Products</h1>
-
 <div id="products">
+<h1>Products</h1>
+<%= search_form_for @q do |f| %>
+<%= f.label :name_cont,'Search any for any word to find your add!' %><br />
+<!--<%= f.check_box :email, {}, 1,nil %>
+<%= f.label :email, 'Includes email?', class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %><br />-->
+<%= f.search_field :name_or_product_or_description_or_email_i_cont %>
+<%= f.submit name:'' %>
+<% end %>
   <% @products.each do |product| %>
     <%= render product %>
-    <p>
-      <%= link_to "Show this product", product, class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %>
-    </p>
+	    
+                            <%= link_to "Show this product", product, class: " ml-4 rounded-lg py-2 px-3 bg-green-600 text-black font-medium cursor-pointer" %>
+    
+	<%= link_to "Edit this product", edit_product_path(product[:id]), class: " ml-4 rounded-lg py-2 px-3 bg-green-600 text-black font-medium cursor-pointer" %>
+	                      <%= link_to "New product", new_product_path, class: 'ml-4 rounded-lg py-2 px-3 text-black bg-green-600 ' %>
+						  
+						  
+
+<p>
+	<br />
+	<br />
+	
+	
+	</p>
+						  
   <% end %>
 </div>
 
-<%= link_to "New product", new_product_path, class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %>
 
 
+<!--
 <%= link_to "User Original", new_product_path, class: "rounded-lg py-3 px-5 bg-green-600 text-black inline-block font-medium cursor-pointer" %>
+-->
 
+                       

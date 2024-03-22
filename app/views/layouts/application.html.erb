@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tues19decs</title>
+    <title>This is in application.html.erb</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,11 +9,34 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+	
+	
+	
   </head>
 
   <body class="prose mx-auto">
+  
+  <header class "bg-green-700">
+    <%= image_tag('big_tent-01.jpg',size: "866px") %>
+	
+	
+	
+<h1><%= @page_title %>page_title_is..inside_application.html.erb..</h1>
+</header>
+<section class="flex">
+ <nav class="bg-green-900 p-6">
+   <ul class ="text-gray-300 leading-8">
+    <li><a href="/">Home</a></li>
+	<li><a href="/questions">Questions</a></li>
+	<li><a href="/news">News</a></li>
+	<li><a href="/contact">Contact</a></li>
+</ul>
+</nav>
     <main class="container mx-auto mt-28 px-5 flex">
+	<p class = "notice"><%=notice%></p>
+	<p class = "alert"><%=alert%></p>
       <%= yield %>
     </main>
+	</section>
   </body>
 </html>

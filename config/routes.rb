@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
+  resources :line_items
+  resources :carts
+
  # get 'store/index'
  #  get 'store'
  #root "adverts#new", as: 'new'
-   root 'adverts#index', as: 'index'
+   #root 'adverts#index', as: 'index'
+   root 'searchs#index', as: 'searchs_index'
   resources :events
   resources :tickets
   resources :p_products
@@ -12,6 +16,12 @@ Rails.application.routes.draw do
   resources :tues19decs
  # resources :ads
  resources :adds
+ #resources :search 
+ resources :searchs
+ 
+ #get 'search', to: 'search#index'
+  # get 'searchs/index', as: 'searchs'
+ # get 'search/index'
  
  #patch 'adverts/:id', to: 'adverts#update'
  post 'adverts/:id/edit', to: 'adverts#update', as: 'update'

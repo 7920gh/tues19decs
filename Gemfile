@@ -74,3 +74,5 @@ gem "tailwindcss-rails", "~> 2.2"
 #gem 'browserlog'
 
 gem 'ransack'
+
+gem 'devise', github: 'heartcombo/devise', branch: 'main'
