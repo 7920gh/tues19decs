@@ -5,6 +5,8 @@ Rails.application.routes.draw do
  # get 'store/index'
  #  get 'store'
  #root "adverts#new", as: 'new'
+ 
+ 
    #root 'adverts#index', as: 'index'
    root 'searchs#index', as: 'searchs_index'
   resources :events
